@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./Assets/CSS/style.css">
+    <title>Document</title>
+</head>
+<body>
+    <!-- style header -->
+<header>Weather Dashboard</header>
+<!-- create box for h1, input box, and search button -->
+    <section class="search">
+        <h1>Search for a City:</h1>
+        <input id="cities" type="text"> 
+        <button>search</button>
+            <option class="search"></option>
+    </section>
+<!-- section for list of hrefs to different cities - link cities -->
+    <section class="cities">
+        <ul style="list-style-type:none; max-width: 20%; margin-left: -125px;">
+            <li class="options" style="background-color:gray; ">Tacoma<a href="#"></a></li>
+            <li class="options" style="background-color:gray">Seattle<a href="#"></a></li>
+            <li class="options" style="background-color:gray">Seoul<a href="#"></a></li>
+            <li class="options" style="background-color:gray">New York<a href="#"></a></li>
+            <li class="options" style="background-color:gray">Ellensburg<a href="#"></a></li>
+            <li class="options" style="background-color:gray">San Diego<a href="#"></a></li>
+            <li class="options" style="background-color:gray">TzinTzunTzan<a href="#"></a></li>
+            <li class="options" style="background-color:gray">Switzerland<a href="#"></a></li>
+        </ul>
+            <div class="main display" style="display:inline-flex;margin-left: 100px;">
+                 
+            </div>
+    </section>
+        
+<!-- // Create a box to display selected citys weather -->
+    <section class="selected">
+        <h1>City Name</h1>
+
+    </section>
+
+    <section class="forecast" style="display: flex;
+    justify-content: center;">
+        <!-- display date at top -->
+        <div class="days">Day 1</div>
+        <div class="days">Day 2</div>
+        <div class="days">Day 3</div>
+        <div class="days">Day 4</div>
+        <div class="days">Day 5</div>
+
+    </section>
+
+<script src="./Assets/JS/script.js"></script>
+</body>
+</html>

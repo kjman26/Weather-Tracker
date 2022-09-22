@@ -6,7 +6,9 @@ header{
     background-image: url("https://3snpkrcw0w-flywheel.netdna-ssl.com/wp-content/uploads/2018/11/sky-back.jpg");
 }
 .options {
-    border-style: solid; margin: 10px 0; line-height: 20px; 
+    border-style: solid; 
+    margin: 10px 0px; 
+    line-height: 20px; 
 }
 
 .days {

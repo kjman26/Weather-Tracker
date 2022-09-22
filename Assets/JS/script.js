@@ -1,28 +1,39 @@
-var searchInputEl = document.getElementById("#cities")
-var formatInputEl = document.getElementById("format-input")
-var searchBtnEl = document.getElementById("search-btn")
-var APIKey = "2e989b2bac28621c7288cf154f0033f0"
-var city = "#cities"; 
+var APIKey = "9073278d26315ddad5d7b4c589fbb8c2";
+var city = $('#cities').val();
+var queryUrl = "https://api.openweathermap.org/data/2.5/weather?q=" + city + "&appid=" + APIKey;
 
-// get parameters
-//5380748
-/*api.openweathermap.org/data/2.5/weather?q={city}&appid={2e989b2bac28621c7288cf154f0033f0} */
+var weatherParams = [
+  {
+    coord: '',
+    weather: '',
+    main: '',
+    clouds: '',
+  }
+];
+//fetch request
+function getWeather(){
+    fetch(queryUrl)
+      .then(response => {
+        return response.json();
+          })
+      .then(data => {
+        localStorage.setItem('practice', JSON.stringify(data))
+         console.log(data)
+      });
+ };
 
-var queryURL = "http://api.openweathermap.org/data/2.5/weather?q=" + city + "&appid=" + APIKey ;
-
-    //JSON.stringify(queryURL, null, "    ");
-    apiSearch(searchTerm, format) 
+ //on click function
+$('#search').on("click", getWeather);
   
-    fetch(requestUrl)
-      .then(function(response){
-        if(response.ok){
-            console.log("error")
-        } else {
-            return response.json()
-        }
-      })
-      .then(function(data) {
-        if (data){
-            printData(data)
-      }
-      })
+
+
+          // localStorage.setItem(city, response)
+          // console.log(response)
+      //   } else {
+      //       return response.json()
+      //   }
+      // });
+      // .then(function(data) {
+        //   if (data){
+          //       printData(data)
+          //

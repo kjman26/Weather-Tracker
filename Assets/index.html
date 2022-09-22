@@ -8,6 +8,7 @@
     type="text/javascript"
     src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.27.0/moment.min.js"
   ></script>
+  <link rel="stylesheet" href="./CSS/style.css">
     <title>Document</title>
 </head>
 <body>
@@ -16,47 +17,36 @@
 <!-- create box for h1, input box, and search button -->
     <section class="search">
         <h1>Search for a City:</h1>
-        <input id="cities" type="text"> 
-        <button>search</button>
+        <input id="cities"> 
+        <button id="search">search</button>
             <option class="search"></option>
     </section>
 <!-- section for list of hrefs to different cities - link cities -->
-    <section class="cities">
-        <ul style="list-style-type:none; max-width: 20%; margin-left: -125px;">
-            <li class="options" style="background-color:gray; ">Tacoma<a href="#"></a></li>
-            <li class="options" style="background-color:gray">Seattle<a href="#"></a></li>
-            <li class="options" style="background-color:gray">Seoul<a href="#"></a></li>
-            <li class="options" style="background-color:gray">New York<a href="#"></a></li>
-            <li class="options" style="background-color:gray">Ellensburg<a href="#"></a></li>
-            <li class="options" style="background-color:gray">San Diego<a href="#"></a></li>
-            <li class="options" style="background-color:gray">TzinTzunTzan<a href="#"></a></li>
-            <li class="options" style="background-color:gray">Switzerland<a href="#"></a></li>
-        </ul>
-            <div class="main display" style="display:inline-flex;margin-left: 100px;">
-                 
-            </div>
-    </section>
+    <section class="searchHistory">
+         <p class="searched"></p>
+     </section>
         
 <!-- // Create a box to display selected citys weather -->
     <section class="selected">
-        <h1>City Name</h1>
+        <h1 id="cityName" type="text">City Name</h1>
 
     </section>
 
     <section class="forecast" style="display: flex;
     justify-content: center;">
         <!-- display date at top -->
-        <div class="days">Day 1</div>
-        <div class="days">Day 2</div>
-        <div class="days">Day 3</div>
-        <div class="days">Day 4</div>
-        <div class="days">Day 5</div>
+        <div id="dayOne">
+            <p id="day1" value="text" placeholder="Weather Data Here"></p>Day 1</div>
+        <div id="dayTwo">Day 2</div>
+        <div id="dayThree">Day 3</div>
+        <div id="dayFour">Day 4</div>
+        <div id="dayFive">Day 5</div>
 
     </section>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
     <script src="./JS/script.js"></script>
-    
+
 </body>
 </html>

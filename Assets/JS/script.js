@@ -1,15 +1,7 @@
 var APIKey = "9073278d26315ddad5d7b4c589fbb8c2";
 var city = $('#cities').val();
-var queryUrl = "https://api.openweathermap.org/data/2.5/weather?q=" + city + "&appid=" + APIKey;
+var queryUrl = "https://api.openweathermap.org/data/2.5/weather?q=Seattle&appid=" + APIKey;
 
-var weatherParams = [
-  {
-    coord: '',
-    weather: '',
-    main: '',
-    clouds: '',
-  }
-];
 //fetch request
 function getWeather(){
     fetch(queryUrl)
@@ -17,14 +9,20 @@ function getWeather(){
         return response.json();
           })
       .then(data => {
-        localStorage.setItem('practice', JSON.stringify(data))
-         console.log(data)
+        localStorage.setItem('practice', JSON.stringify(data.main), (data.weather))
+        console.log(JSON.stringify(data.main),(data.weather))
+        $('#cityName').text(JSON.stringify(data.main))
       });
+      // .then(data.main => {
+        
+      // }
  };
 
  //on click function
 $('#search').on("click", getWeather);
-  
+console.log(city)
+
+
 
 
           // localStorage.setItem(city, response)

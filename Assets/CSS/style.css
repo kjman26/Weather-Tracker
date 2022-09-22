@@ -24,3 +24,10 @@ header{
     margin-left: 100px;
     background-color: blue;
 }
+
+.selected{
+    display: flex;
+    flex-direction: column; 
+    width: 60%;
+    height: 40%;
+}

@@ -27,7 +27,18 @@ header{
 
 .selected{
     display: flex;
-    flex-direction: column; 
+    position: relative;
+    margin-left: 35%; 
     width: 60%;
     height: 40%;
 }
+
+#weatherInfo{
+
+}
+
+#cityName{
+    border: dashed lightseagreen;
+}
+
+

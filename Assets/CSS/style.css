@@ -1,3 +1,6 @@
+*{
+    font-family: sans-serif;
+}
 header{
     text-align: center;
     font-size: 45px;
@@ -30,7 +33,13 @@ header{
     margin-left: 35%; 
     width: 60%;
     height: 40%; 
-    border: dashed lightseagreen;
+    background-color: cornflowerblue;
+    border: blue double thick;
+    }
+
+.selected:hover{
+    cursor:pointer;
+    transform: scale(1.2);
 }
 
 #weatherInfo{

@@ -2,7 +2,7 @@
 
 [Click here to visit site!](https://kjman26.github.io/Weather-Tracker/)
 
-![Screenshot](screenshot_weather_tracker.png)
+![Screenshot]("Weather-Tracker\images\screenshot_weather_tracker.png")
 
 
 

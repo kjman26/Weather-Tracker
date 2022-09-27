@@ -20,7 +20,7 @@ const city = $('#cities').val()
 // function getForecast(){
 // let lat = localStorage.getItem("lat","");
 // let lon = localStorage.getItem("lon","");
-// fetch("https://api.openweathermap.org/data/2.5/onecall?lat=" + {lat} + "&lon=" + {lon} + "&exclude=hourly,daily&units=imperial&appid=" + APIKey)
+// fetch("https://api.openweathermap.org/data/2.5/onecall?lat={lat}&lon={lon}&exclude=hourly,daily&units=imperial&appid=" + APIKey)
 //   .then(response => {
 //     return response.json();
 //   })

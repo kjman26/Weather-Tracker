@@ -3,17 +3,17 @@ const city = $('#cities').val()
 
 
 //get city lat/long
-function getLatLong(){
-  let city = $('#cities').val()
-  fetch("https://api.openweathermap.org/data/2.5/weather?q=" + city +"&appid=" + APIKey)
-  .then(response => {
-    return response.json();
-  })
-    .then(data => {
-      localStorage.setItem("lat",JSON.stringify(data.coord.lat))
-      localStorage.setItem("lon",JSON.stringify(data.coord.lon))
-    })
-  };
+// function getLatLong(){
+//   let city = $('#cities').val()
+//   fetch("https://api.openweathermap.org/data/2.5/weather?q=" + city +"&appid=" + APIKey)
+//   .then(response => {
+//     return response.json();
+//   })
+//     .then(data => {
+//       localStorage.setItem("lat",JSON.stringify(data.coord.lat))
+//       localStorage.setItem("lon",JSON.stringify(data.coord.lon))
+//     })
+//   };
 
 
 // fetching 5 day forecast

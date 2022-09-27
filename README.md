@@ -1,6 +1,6 @@
 # Weather-Tracker
 
-[Click here to visit site!](https://kjman26.github.io/Weather-Tracker/)
+[Click here to visit site!]("https://kjman26.github.io/Weather-Tracker/")
 ![screenshot]("screenshot_weather_tracker.png")
 
 
